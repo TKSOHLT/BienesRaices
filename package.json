@@ -1,0 +1,27 @@
+{
+  "name": "bienesraices_mvc",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto con node js",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "keywords": [
+    "MVC"
+  ],
+  "author": "Tksohlt",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.10",
+    "@tailwindcss/postcss": "^4.1.10",
+    "express": "^5.1.0",
+    "pug": "^3.0.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "nodemon": "^3.1.10",
+    "tailwindcss": "^4.1.10"
+  }
+}
