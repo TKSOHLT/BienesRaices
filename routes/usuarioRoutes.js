@@ -1,5 +1,5 @@
 import express from 'express';
-import { formularioLogin, formularioOlvidePassword, formularioRegistro } from '../controllers/usuarioController.js';
+import { formularioLogin, formularioOlvidePassword, formularioRegistro, registrar, confirmar } from '../controllers/usuarioController.js';
 
 const router = express.Router();
 
@@ -21,8 +21,13 @@ const router = express.Router();
 //         res.json({msg: 'Respuesta de tipo Post'})
 //     })
 
-router.get('/login', formularioLogin)
-router.get('/registro', formularioRegistro)
-router.get('/olvide-password', formularioOlvidePassword)
+router.get('/login', formularioLogin);
+
+router.get('/registro', formularioRegistro);
+router.post('/registro', registrar);
+
+//Utilizando routing dinamico:::
+router.get('/confirmar/:token', confirmar)
+router.get('/olvide-password', formularioOlvidePassword);
 
 export default router;

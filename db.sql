@@ -1,0 +1,1 @@
+CREATE DATABASE bienesraices_node_mvc;
